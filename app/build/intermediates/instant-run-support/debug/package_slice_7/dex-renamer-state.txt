@@ -1,0 +1,4 @@
+#Thu Dec 07 19:38:03 ICT 2017
+base.0=C\:\\Users\\azkayzx\\AndroidStudioProjects\\IAK-Beginner-master\\Weebs\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex

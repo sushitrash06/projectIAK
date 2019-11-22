@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.weebs.wb1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question1"
+        android:textSize="35sp"
+        android:id="@+id/q1"
+        android:textStyle="bold"
+         />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The Amanto, aliens from outer space, have invaded Earth and taken over feudal Japan. As a result, a prohibition on swords has been established, and the samurai of Japan are treated with disregard as a consequence."
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/q1"
+    android:layout_marginTop="15dp"
+    android:textSize="20sp"
+    android:id="@+id/soal1"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soal1"
+        android:id="@+id/pilihan">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soal1"
+        android:layout_marginTop="30dp"
+        android:text="Samurai X"
+        android:textSize="20dp"
+        android:id="@+id/rb1"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rb1"
+        android:layout_marginTop="15dp"
+        android:text="Gintama"
+        android:textSize="20dp"
+        android:id="@+id/rb2"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rb2"
+        android:layout_marginTop="15dp"
+        android:text="Naruto"
+        android:textSize="20dp"
+
+        />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="check1"
+            android:background="@color/colorPrimary"
+            android:text="Check"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/next1"
+            android:onClick="next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#bdfcfb"
+            android:enabled="false"
+            android:text=">"
+            android:textSize="20dp"
+            android:textColor="#878686" />
+
+    </LinearLayout>
+
+</RelativeLayout>

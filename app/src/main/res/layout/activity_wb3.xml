@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.weebs.wb3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question3"
+        android:textSize="35sp"
+        android:id="@+id/q3"
+        android:textStyle="bold"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="how many female characters in this picture?"
+    android:layout_below="@id/q3"
+    android:textSize="25dp"
+    android:id="@+id/soal3"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@id/soal3"
+        android:src="@drawable/collage"
+        android:id="@+id/gb1"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gb1"
+        android:id="@+id/jawaban2"
+        android:orientation="horizontal"
+
+        >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gb1"
+        android:layout_marginLeft="25dp"
+        android:text="1"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:id="@+id/rb1"
+        />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_toRightOf="@id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gb1"
+            android:layout_marginRight="20dp"
+            android:text="2"
+            android:textSize="20dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gb1"
+        android:layout_toRightOf="@id/rb2"
+        android:layout_marginRight="20dp"
+        android:text="NO ONE "
+        android:textSize="20dp"
+        android:id="@+id/rb3" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/gb1"
+        android:layout_toRightOf="@id/rb3"
+        android:text="4"
+        android:textSize="20dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="check3"
+            android:background="@color/colorPrimary"
+            android:text="Check"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/next3"
+            android:onClick="next3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#c6fffe"
+            android:enabled="false"
+            android:text=">"
+            android:textSize="20dp"
+
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.weebs.wb4">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question4"
+        android:textSize="35sp"
+        android:id="@+id/q4"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Which of the following characters are women who have blond hair?"
+        android:layout_below="@id/q4"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/soal4"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@id/soal4"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cb_yamada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soal4"
+        android:text="ELF YAMADA 'EMILY'"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cb_chitoge"
+        android:layout_below="@id/cb_yamada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHITOGE"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cb_hillegard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_chitoge"
+        android:text="HILDEGARD"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cb_nico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YAZAWA NICO"
+        android:layout_below="@id/cb_hillegard"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cb_rem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_nico"
+        android:text="REM"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/cb_lucy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_rem"
+        android:text="LUCY HEARTFILIA"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_maika"
+        android:layout_below="@id/cb_lucy"
+        android:text="Maika"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="check4"
+            android:background="@color/colorPrimary"
+            android:text="check"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/next4"
+            android:onClick="next4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:alpha=".5"
+            android:background="@color/colorPrimary"
+            android:enabled="false"
+            android:text=">"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
